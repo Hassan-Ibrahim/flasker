@@ -1,0 +1,22 @@
+<h1> Hello World </h1>
+
+<p> This is my first webapp using flask. </p>
+
+<p> My name is {{first_name | capitalize}}
+
+<p> {{stuff | safe}}
+
+<p><strong> Favourite Pizza </strong></p>
+
+{% for i in favourite_pizza %}
+	{% if i == 20 %}
+		{{i + 20}} </br>
+	{% else %}
+    	{{i}}</br>
+    {% endif %}
+
+{% endfor %}
+
+</br>
+
+{{favourite_pizza[0]}}
